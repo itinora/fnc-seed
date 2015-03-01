@@ -23,17 +23,11 @@ cd dev
 npm install
 ```
 
-This will create folder `node_modules` that contains all tools to run gulp tasks
+This will
+1. create folder `node_modules` that contains all tools to run gulp tasks
 
-### Install bower components
+2. create folder `bower_components` that contains all client side dependencies by runnig <code>gulp bower</code> as postinstall command
 
-Run gulp tasks to install bower components
-
-```
-gulp bower
-```
-
-This will create folder `bower_components` that contains all client side dependencies
 
 ### Run application
 
