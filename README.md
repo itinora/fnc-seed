@@ -24,6 +24,7 @@ npm install
 ```
 
 This will
+
 1. create folder `node_modules` that contains all tools to run gulp tasks
 
 2. create folder `bower_components` that contains all client side dependencies by runnig <code>gulp bower</code> as postinstall command
