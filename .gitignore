@@ -1,3 +1,4 @@
 .idea
 dev/bower_components
 dev/node_modules
+deploy/
