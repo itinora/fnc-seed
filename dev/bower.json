@@ -1,0 +1,30 @@
+{
+  "name": "fnc-seed",
+  "version": "0.0.1",
+  "authors": [
+    "souvikbasu@gmail.com"
+  ],
+  "description": "Empty fncJS Web application",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "fncJS"
+  ],
+  "license": "MIT",
+  "homepage": "www.fncjs.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "~0.5.4",
+    "knockout": "~3.3.0",
+    "polymer": "Polymer/polymer#~0.5.5",
+    "fnc": "*"
+  }
+}

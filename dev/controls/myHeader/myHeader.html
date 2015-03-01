@@ -1,0 +1,75 @@
+<template id="my_header">
+    <style>
+    .my-header-bar-upper {
+      height: 12.5px;
+      background-color: #266f95;
+    }
+
+    .my-header-bar-lower {
+      height: 12.5px;
+      background-color: #005581;
+    }
+
+    .my-header-logo {
+      width: 175px;
+      height: 100%;
+      background-color: #ffffff;
+      display: inline-block;
+    }
+
+    .my-header-logo img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .my-header-left-menu {
+    }
+
+    .my-header-left-menu .primary {
+      height: 20px;
+      background-color: transparent;
+    }
+
+    .my-header-right-menu {
+      width: 250px;
+      height: 100%;
+      display: inline-block;
+      right: 0;
+    }
+
+    .menu-item {
+      width: 108.5px !important;
+      display: inline-block;
+      padding-top: 5px;
+      font-weight: bold;
+      border-right: solid 1px #666666;
+      cursor: pointer;
+      text-align: center !important;
+    }
+
+    .menu-item:hover {
+      background-color: #3191c5;
+    }
+
+  </style>
+  <stackpanel orientation="horizontal" height="48" style="position: relative">
+    <div class="my-header-logo" width="175"><img src="static/images/logo.png" height="45"></div>
+    <grid orientation="vertical" rows="1" rowheights="100%" >
+      <stackpanel orientation="vertical" grid.row="0">
+        <div class="my-header-bar-upper" height="13"></div>
+        <div class="my-header-bar-lower" height="13"></div>
+      </stackpanel>
+      <div grid.row="0" height="26">
+        <stackpanel orientation="horizontal" class="my-header-left-menu" >
+          <div class="menu-item primary" width="108.5" >Home</div>
+          <div class="menu-item primary" width="108.5" >About</div>
+        </stackpanel>
+      </div>
+      <div class="my-header-right-menu" grid.row="0" width="400">Sign In</div>
+    </grid>
+  </stackpanel>
+</template>
+
+<script>
+    fnc.staticMethods.registerWebComponent(this.document._currentScript.ownerDocument);
+</script>

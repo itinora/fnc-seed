@@ -1,0 +1,27 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>fncJS seed project</title>
+
+    <!--build:css /static/css/style.min.css -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <!--/build-->
+
+    <!--build:js /static/js/all.min.js-->
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="bower_components/fnc/dist/fnc.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <!--/build-->
+
+    <link rel="import" href="controls/myHeader/myHeader.html">
+</head>
+<body>
+<grid rows="2" id="main-page" rowheights="49 *" >
+    <my-header grid.row="0" ></my-header>
+    <div grid.row="1" id="page-content">
+        Page Content
+    </div>
+</grid>
+</body>
+</html>

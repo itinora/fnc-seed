@@ -1,0 +1,19 @@
+{
+  "preset": "google",
+  "fileExtensions": [
+    ".js",
+    "jscs"
+  ],
+  "requireParenthesesAroundIIFE": true,
+  "maximumLineLength": 120,
+  "validateLineBreaks": "CRLF",
+  "validateIndentation": 4,
+  "disallowKeywords": ["with"],
+  "disallowSpacesInsideObjectBrackets": null,
+  "disallowImplicitTypeConversion": ["string"],
+  "safeContextKeyword": "_this",
+  "excludeFiles": [
+    "node_modules/**",
+    "bower_components/**"
+  ]
+}
