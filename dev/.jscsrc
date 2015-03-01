@@ -6,7 +6,8 @@
   ],
   "requireParenthesesAroundIIFE": true,
   "maximumLineLength": 120,
-  "validateLineBreaks": "CRLF",
+  // for windows OS use "CLRF" for validateLineBreaks
+  "validateLineBreaks": "LF",
   "validateIndentation": 4,
   "disallowKeywords": ["with"],
   "disallowSpacesInsideObjectBrackets": null,
