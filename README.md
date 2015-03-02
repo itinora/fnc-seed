@@ -5,9 +5,7 @@ Since fncJS does not dictate the structure of your application, you can use this
 It provides a skeleton to create a Web app using Web Components.
 
 ## Getting Started
-Clone fnc-seed
-
-Clone the fnc-seed repository using [git][git]:
+Clone the fnc-seed repository using git:
 
 ```
 git clone https://github.com/itinora/fnc-seed.git
@@ -36,7 +34,18 @@ This will
 gulp
 ```
 
-This will run the application and watch files for changes. Whenever any file is modified BrowserSync will auto refresh the page
+This will do the following:
+- Process all JS files
+- Process all SCSS files
+- Process index.html file to point to the right JS and CSS locations
+- Deploy all web server files under folder `deploy`
+- Run the web server and open the url in a browser (default: chrome. You can change the browser in gulpfile.js)
+- Watch HTML, JS and SCSS files for any change. On change, rerun the above steps and refresh the browser page using BrowserSync
 
+### To deploy on Production
 
+```
+gulp --prod
+```
 
+This will create minified versions of all js and css files ideal for a prod deploy
